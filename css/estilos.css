@@ -1,0 +1,67 @@
+/*Autor: Mateo Franciulli 310956*/
+
+.body{
+	background-color:#ffffff;
+    font-family: Arial, Helvetica;
+}
+aside {
+    width: 30%;
+    padding-right: 5px;
+    margin-right: 25px;
+    float: left;
+    background-color:rgba(202, 185, 231, 0.701);
+   
+  }
+.TituloCabecera{
+text-align: center;
+}
+
+
+.barra-nav {
+	text-align: right;	
+    background-color: #000000;
+    font-size: 90% ;
+    color:#ffffff;
+    text-decoration: none;
+   
+}
+
+.aToWhite {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1%
+   /* margin-left: 2%*/
+    
+}
+
+.SitioCategorias {
+    background-color: rgba(202, 185, 231, 0.701);
+}
+
+/*#SeccionCatABorrar {
+    clear:both;
+    float: left;
+   
+}*/
+.SitioExperiencias {
+    background-color: #ffffff;
+}
+
+.SitioInformes {
+    background-color: grey;
+}
+
+.SitioGestionCategorias{
+    background-color: bisque;
+}
+
+.SitioGestionDeExp {
+    background-color: orange;
+  
+}
+
+.PieDePagina {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Autor: Mateo Franciulli 310956-->
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Obligatorio 1</title>
+    <!-- Conexion de CSS con el HTML-->
+    <link rel="stylesheet" href="css/estilos.css" >
+   
+<!-- Conexion de ambos JS's con el HTML--> 
+<!--
+     <script src="js/clases.js"></script>
+    <script src="js/funciones.js"></script> 
+-->
+
+
+
+
+  </head>
+<body>
+ <header class="TituloCabecera" id="header" >
+        <h2> Regalos Especiales </h2>
+         <p> Sitio Desarollado por: <a href="https://www.ort.edu.uy" target="_blank"> Mateo Franciulli (Nro 310956) </a> </p>
+</header>
+<div class="barraDeNav" id="navegation-bar">
+
+    <nav class="barra-nav"> 
+    <a class="aToWhite" href="#informes"> Informes </a>
+    <a class="aToWhite" href="#categorias"> Gestión de categorías </a>
+    <a class="aToWhite" href="#experiencias"> Gestión de experiencias </a>
+    
+    
+</nav>
+
+</div>
+<br> 
+<aside class="SitioCategorias">
+<h3>Categorias </h3>
+<select id="Categorias" ></select>
+
+
+<h3>Cantidad de personas </h3>
+<select id="CantPersonas" >
+    <option value="Todos">Todos</option>
+    <option value="1Per">1 Persona</option>
+    <option value="2Per">2 personas</option>
+    <option value="+2Per">Más de 2 personas</option>
+</select>
+
+<h3>Orden de precio </h3>
+<select  id="OrdPrecio" >
+    <option value="Creciente">Creciente</option>
+    <option value="Decreciente">Decreciente </option>
+</select>
+
+</aside>
+
+<main class="SitioExperiencias">
+    <h3>Experiencias</h3>
+        <p>Sin datos</p>
+
+    <h3>¡Comprar!</h3>
+        <p>Experiencia: sin datos</p>
+        <label for="Usuario-Comprador">Nombre Comprador:</label>
+            <input type="text" required id="Usuario-Comprador" name="Nombre Comprador">
+        <label for="mail">Mail:</label>
+            <input type="email" required id="mail" name="mail">
+        <button id="Boton-mail" disabled>Comprar</button>
+</main>
+<br> <br>
+
+<section class="SitioInformes" id="informes">
+    <h3>Informes</h3>
+    <p>Monto de la experiancia/s más cara/s</p>
+    <p>Sin datos</p>
+    <p>Experiancia/s más veces comprada</p>
+<details>
+    <summary>Detalles de compras de la categoría seleccionada</summary>
+    <p>Compras realizadas</p>
+        <ul>
+            <li>Sin datos</li>
+        </ul>
+
+
+</details>
+    <!--  Falta cosas-->
+    <!-- Averiguar como se hace la flechita para abrir -->
+</section>
+<br>
+<section class="SitioGestionCategorias" id="categorias">
+    <br>
+    <h3>Gestión de categorías</h3>
+        <label for="Categoria">Nombre de la categoría:</label>
+            <input type="text" id="Categoria" required name="Imput-Nom-Categoria">
+        <label for="imput-detalles-cat">Detalles de la categoría:</label>
+            <input type="email" id="imput-detalles-cat" name="detalle-cat" required>
+        <button id="Boton-agregar-categoria" >Agregar</button>
+<br><br>
+    <label>Seleccionar categorías a borrar</label>
+        <!-- Fijarse para ponerlo en misma linea-->
+
+        <select>
+            <!-- <option value="" required></option> -->
+        </select>
+        <button id="borrar-categoria" disabled >Eliminar</button>
+
+</section>
+<br>
+<section class="SitioGestionDeExp" id="experiencias">
+    <br>
+    <h3>Gestíon de Experiencias</h3>
+        <label for="TituloExperiencia">Título de la Experiencia:</label>
+            <input type="text" required id="TituloExperiencia" name="Imput-Titl-Exp">
+       
+        <label for="imput-descr-exp">Descripión:</label>
+            <input type="text"  required id="imput-descr-exp" name="descr-exp">
+        
+        <label for="imput-precio-exp">Precio:</label>
+            <input type="text" required id="imput-precio-exp" name="precio-exp">
+    
+        <label for="cant-exp">Cantidad:</label>
+            <select id="cant-exp" >
+                <option value="1personaExp" id="cantidad">1 persona</option>
+            </select>
+
+
+        <label >Categoría:</label>
+            <select id="categoria-exp" >
+               
+            </select>
+   
+
+
+        <button id="Boton-agregar-experiencia" disabled >Agregar</button>
+<br><br>    
+    <label>Seleccionar experiencia a borrar</label>
+        <!-- Fijarse para ponerlo en misma linea-->
+        <select>
+            <!-- <option value=""></option> -->
+        </select>
+        <button id="borrar-experiencia" disabled>Eliminar</button>
+</section>
+<footer class="PieDePagina">
+    <p>Sitio desarollado por: Mateo Franciulli (310956) - Universidad ORT Uruguay</p>
+</footer>
+
+
+</body>
+
+</html>
+
